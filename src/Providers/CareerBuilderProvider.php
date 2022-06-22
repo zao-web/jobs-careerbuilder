@@ -59,13 +59,14 @@ class CareerBuilderProvider extends AbstractProvider
      * @var array
      */
     protected $queryParams = [
-        'api_key' => null,
-        'search' => null,
+        'keywords' => null,
         'location' => null,
-        'radius_miles' => null,
-        'page' => null,
-        'jobs_per_page' => null,
-        'days_ago' => null,
+        'cb_workhome' => null,
+        'emp' => null,
+        'posted' => null,
+        'pay' => null,
+        'cb_apply' => null,
+        'page_number' => null,
     ];
 
     /**
