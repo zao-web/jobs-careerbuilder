@@ -1,0 +1,47 @@
+{
+    "name": "zao-web/jobs-careerbuilder",
+    "type": "library",
+    "description": "Making it simple to integrate your application with CareerBuilder Jobs Page Scraping.",
+    "keywords": [
+        "jobs",
+        "api client",
+        "object",
+        "careerbiulder"
+    ],
+     "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/zao-web/jobs-common.git"
+        }
+    ],
+    "homepage": "https://github.com/zao-web/jobs-careerbuilder",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Karl Hughes",
+            "email": "khughes.me@gmail.com",
+            "homepage": "https://github.com/karllhughes"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "zao-web/jobs-common": "dev-master",
+        "weidner/goutte": "^2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.6",
+        "phpunit/php-code-coverage": "~2.0",
+        "mockery/mockery": ">=0.9.4",
+        "squizlabs/php_codesniffer": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JobApis\\Jobs\\Client\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JobApis\\Jobs\\Client\\Test\\": "tests/src/"
+        }
+    }
+}
